@@ -13,7 +13,7 @@
 
 (def p "f5 f4-ns measure lh-copy mt0")
 
-(def _button-sm "f6 dim br2 ph3 pv2 mb2 mr2 dib white bg-black-90")
+(def _button-sm "f6 br2 ph3 pv2 mb2 mr2 dib white bg-black-90")
 
 (def _button-row "flex flex-wrap")
 
