@@ -1,3 +1,8 @@
 .rebel_readline_history
 .cpcache
-target/public
+target
+.cljs_node_repl
+node_modules
+package-lock.json
+out
+.nrepl-port
