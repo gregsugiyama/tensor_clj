@@ -1,5 +1,6 @@
 ^{:css-dirs ["resources/public/css"]}
-{:closure-defines {goog.DEBUG true
+{:main frontend.core
+ :closure-defines {goog.DEBUG true
                    "re_frame.trace.trace_enabled_QMARK_" true}
  :optimizations :none
  :preloads [day8.re-frame-10x.preload
@@ -8,4 +9,6 @@
  :output-dir "target/public/cljs-out/dev"
  :output-to "target/public/cljs-out/dev-main.js"
  :language-out :ecmascript5 ;; see https://dev.clojure.org/jira/browse/CLJS-2376
- :main frontend.core}
+ :foreign-libs [{:file "target/public/js-out/tensorflow.js"
+                 :provides ["tensorflow"]
+                 :global-exports {tensorflow Tensorflow}}]}
